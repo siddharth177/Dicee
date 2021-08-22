@@ -27,13 +27,15 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xffd3f9b5),
+          backgroundColor: Color(0xfff5ffc6),
+
           title: Center(child: Text('Dicee', style: TextStyle(
             fontWeight: FontWeight.bold,
+            color: Color(0xffecc8ae),
             fontSize: 25.0,
           ),),),
         ),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Color(0xffb4e1ff),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
