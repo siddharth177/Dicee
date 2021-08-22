@@ -39,15 +39,18 @@ flutter:
 
 
   fonts:
-     - family: DancingScript
-       fonts:
-         - asset: fonts/DancingScript-Regular.ttf
-     - family: OpenSans
-       fonts:
-         - asset: fonts/OpenSans-Regular.ttf
-     - family: VesperLibre
-       fonts:
-         - asset: fonts/VesperLibre-Regular.ttf
+    - family: DancingScript
+      fonts:
+        - asset: fonts/DancingScript-Regular.ttf
+    - family: OpenSans
+      fonts:
+        - asset: fonts/OpenSans-Regular.ttf
+    - family: VesperLibre
+      fonts:
+        - asset: fonts/VesperLibre-Regular.ttf
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

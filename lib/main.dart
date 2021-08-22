@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
@@ -35,9 +34,9 @@ class _MyAppState extends State<MyApp> {
           title: Center(child: Text('Dicee', style: TextStyle(
             fontWeight: FontWeight.bold,
             fontFamily: 'VesperLibre',
-            letterSpacing: 1.0,
+            letterSpacing: 2.5,
             color: Color(0xffecc8ae),
-            fontSize: 25.0,
+            fontSize: 30.0,
           ),),),
         ),
         backgroundColor: Color(0xffb4e1ff),
@@ -45,16 +44,16 @@ class _MyAppState extends State<MyApp> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
-              margin: EdgeInsets.only(bottom: 40.0),
+              // margin: EdgeInsets.only(bottom: 20.0),
               child: Center(
                 child: Text(
-                  'Play with the dices',
+                  'Play with the dices.',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 25.0,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'DancingScript',
-                      letterSpacing: 1.0,
+                      letterSpacing: 2.0,
                   ),
                 ),
               ),
@@ -94,7 +93,7 @@ class _MyAppState extends State<MyApp> {
             ),
 
             Container(
-              margin: EdgeInsets.only(top: 20.0),
+              // margin: EdgeInsets.only(top: 20.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -102,14 +101,14 @@ class _MyAppState extends State<MyApp> {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 25.0,
-                      fontFamily: 'Roboto',
+                      fontFamily: 'Montserrat',
                       fontWeight: FontWeight.bold,
                   ),),
                   Text('Sum = $sumRightDice',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 25.0,
-                        fontFamily: 'Roboto',
+                        fontFamily: 'Montserrat',
                         fontWeight: FontWeight.bold
                     ),),
                 ],
@@ -118,48 +117,60 @@ class _MyAppState extends State<MyApp> {
             Container(
               margin: EdgeInsets.only(left: 10.0, right: 10.0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Steps to play the game:-',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Color(0xff235789),
                     fontSize: 16.0,
                     fontFamily: 'OpenSans',
+                    letterSpacing: 1.0,
                   ),),
-                  Text('1. Roll the dice till the sum of both players are not same(0 is not counted)',
+                  Text('1. Roll the dice till the sum of both players are not same (0 is not counted).',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Color(0xff235789),
                       fontSize: 16.0,
                       fontFamily: 'OpenSans',
+                      letterSpacing: 1.0,
                   ),),
-                  Text('2. When the sum is same check the number appearing on the dice',
+                  Text('2. When the sum is same, check the number appearing on dices.',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Color(0xff235789),
                       fontSize: 16.0,
                       fontFamily: 'OpenSans',
+                      letterSpacing: 1.0,
                   ),),
-                  Text('3. There will be two scenerio',
+                  Text('3. There will be two scenarios - ',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Color(0xff235789),
                     fontSize: 16.0,
                     fontFamily: 'OpenSans',
+                    letterSpacing: 1.0,
                   ),),
                   Container(
                     margin: EdgeInsets.only(left:8.0,),
                     child: Column(
                       children: [
-                        Text('a. If numbers on both the dice are same then keep rolling and repeating steps 1 and 2',
+                        Text('a. If numbers on both the dices are same then keep rolling and repeating steps 1 and 2.',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
+                            color: Color(0xff235789),
                             fontSize: 16.0,
                             fontFamily: 'OpenSans',
+                            letterSpacing: 1.0,
                           ),),
                         Text('b. If numbers are different, the one having larger number on the dice wins.',
                           style: TextStyle(
+                            color: Color(0xff235789),
                             fontWeight: FontWeight.bold,
                             fontSize: 16.0,
                             fontFamily: 'OpenSans',
+                            letterSpacing: 1.0,
                           ),),
                       ],
                     ),
