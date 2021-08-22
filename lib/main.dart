@@ -37,13 +37,13 @@ class _MyAppState extends State<MyApp> {
         ),
         backgroundColor: Color(0xffb4e1ff),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
               margin: EdgeInsets.only(bottom: 40.0),
               child: Center(
                 child: Text(
-                  'Calculate your score using dices',
+                  'Play with the dices',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 25.0,
@@ -90,6 +90,21 @@ class _MyAppState extends State<MyApp> {
                         fontSize: 25.0,
                         fontWeight: FontWeight.bold
                     ),),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 10.0, right: 10.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Steps to play the game:-'),
+                  Text('1. Roll the dice till the sum of both players are not same(0 is not counted)'),
+                  Text('2. When the sum is same check the number appearing on the dice'),
+                  Text('3. There will be two scenerio'),
+                  Text('a. If numbers on both the dice are same then keep rolling and repeating steps 1 and 2'),
+                  Text('b. If numbers are different, the one having larger number on the dice wins.')
                 ],
               ),
             ),
